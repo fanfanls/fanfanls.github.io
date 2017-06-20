@@ -7,7 +7,7 @@ title: fanls's home
 subtitle:
 description:
 author: fanls
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -71,4 +71,11 @@ theme: next
 deploy:
   type: git
   repository: https://github.com/fanfanls/fanfanls.github.io.git
-  branch: master     
+  branch: master
+
+social:
+  github: https://github.com/fanfanls
+  #twitter: https://twitter.com/your-user-name
+  #weibo: http://weibo.com/your-user-name
+  #douban: http://douban.com/people/your-user-name
+  zhihu: http://www.zhihu.com/people/fanfanls    
