@@ -103,10 +103,14 @@ A:终端执行 hexo new page "tags"，自动生成了页面source/index.md；
   修改页面，增加一行 type: "tags"；
   打开主题配置文件，menu 记录中确认  tags: tags 开启。
   重试。
+
+  关于、分类界面同上。
   
 
-
 ```
+
+
+关于主题优化可以看官网介绍，很详细 http://theme-next.iissnan.com/theme-settings.html
 
 
 
