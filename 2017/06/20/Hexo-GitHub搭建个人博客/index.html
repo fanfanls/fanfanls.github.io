@@ -100,7 +100,7 @@
 <meta property="og:url" content="https://fanfanls.github.io/2017/06/20/Hexo-GitHub搭建个人博客/index.html">
 <meta property="og:site_name" content="fanls&#39;s home">
 <meta property="og:description" content="本文使用Hexo + GitHub Pages建立个人博客。hexo是一款基于Node.js的静态博客框架，可以方便的生成静态网页托管在github上。可以达到同样目的的还有jekyll,相比hexo而言，jekyll和github更加友好，我们按照jekyll格式写好提交后，github会自动生成静态页面。也就是说，只要交给github托管，本地不需要jekyll环境。但是如果不放在github">
-<meta property="og:updated_time" content="2017-06-20T10:11:36.150Z">
+<meta property="og:updated_time" content="2017-06-21T09:02:18.832Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建个人博客">
 <meta name="twitter:description" content="本文使用Hexo + GitHub Pages建立个人博客。hexo是一款基于Node.js的静态博客框架，可以方便的生成静态网页托管在github上。可以达到同样目的的还有jekyll,相比hexo而言，jekyll和github更加友好，我们按照jekyll格式写好提交后，github会自动生成静态页面。也就是说，只要交给github托管，本地不需要jekyll环境。但是如果不放在github">
@@ -351,7 +351,8 @@
 <h1 id="文章托管"><a href="#文章托管" class="headerlink" title="文章托管"></a>文章托管</h1><p>现在已经基本实现博客搭建， 然而当你需要再换一台电脑写博客时就会有些犯难。Github上部署的只有生成的静态页，原始文章是在本地的， 怎么解决这个问题呢？ 我们可以使用分支来管理。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">新建一个分支hexo</div><div class="line">修改hexo分支为默认分支 </div><div class="line">将你本地的hexo目录下文件拷贝一份至该分支</div><div class="line">站点配置文件中deploy的分支确认为master</div><div class="line">提交</div></pre></td></tr></table></figure></p>
 <p>这样，以后你更换电脑只需要将该分支拉下来写文章 发布一气呵成， 快动手试试吧。</p>
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Q:点击分类标签报404，怎么解决？</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">A:终端执行 hexo new page <span class="string">"tags"</span>，自动生成了页面<span class="built_in">source</span>/index.md；</div><div class="line">  修改页面，增加一行 <span class="built_in">type</span>: <span class="string">"tags"</span>；</div><div class="line">  打开主题配置文件，menu 记录中确认  tags: tags 开启。</div><div class="line">  重试。</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">A:终端执行 hexo new page <span class="string">"tags"</span>，自动生成了页面<span class="built_in">source</span>/index.md；</div><div class="line">  修改页面，增加一行 <span class="built_in">type</span>: <span class="string">"tags"</span>；</div><div class="line">  打开主题配置文件，menu 记录中确认  tags: tags 开启。</div><div class="line">  重试。</div><div class="line"></div><div class="line">  关于、分类界面同上。</div></pre></td></tr></table></figure>
+<p>关于主题优化可以看官网介绍，很详细 <a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">http://theme-next.iissnan.com/theme-settings.html</a></p>
 
       
     </div>
@@ -466,7 +467,7 @@
                alt="fanls" />
           <p class="site-author-name" itemprop="name">fanls</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">I am my problem . but also my solution.</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -621,6 +622,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -646,6 +650,12 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   
